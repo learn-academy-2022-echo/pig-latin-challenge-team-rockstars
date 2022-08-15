@@ -33,9 +33,62 @@ const App = () => {
 
       // ACTION ITEM: your Pig Latin logic goes here!
 
-    
+      // Psuedo Code:
+      // Input: Takes the text the user types and can see the words that begin with a vowel
+      // Output: output the words beginning with vowels with adding "way" at the end of the word (e.g. orange = orangeway)
 
-      // ACTION ITEM: this return will be the output of your Pig Latin'd code
+      const vowelOutput = () =>{
+       if(vowelsArray.includes(eachWord[0]))
+       return eachWord + "way"
+      }
+      
+      console.log(vowelOutput());
+      
+      
+
+
+
+      // Psuedo Code
+      // Create a function named quHard
+      // Input: Take in any word with a "qu" and the string
+      // Output: a word that takes the first consanant and qu and puts it on the back and adds "ay"
+
+      const quHard = () => {
+        if(eachWord.includes("qu")){
+      
+      let firstcon = eachWord.slice(0, 3)
+      let midcon = eachWord.slice(3)
+        
+        return midcon + firstcon + "ay"
+      }
+    }
+
+     
+      console.log(quHard(arrayOfUserInput));
+
+
+
+
+
+      // Psuedo Code
+      // Create function named yFunc
+      // Input: take the userinputted word and locate the "y" in the string
+      // Output: output the piglatin word with y in the beginning and anything before on the back with "ay" added to it.
+
+      const yFunc = () => {
+        if(eachWord.includes("y") && eachWord !== vowelsArray)
+        
+     
+       
+       
+        return eachWord
+      }
+
+      console.log(yFunc(arrayOfUserInput));
+
+
+    
+        // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
     })
 
