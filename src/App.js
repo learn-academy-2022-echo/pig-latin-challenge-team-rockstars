@@ -42,8 +42,9 @@ const App = () => {
        return eachWord + "way"
       }
       
+      console.log(vowelOutput());
       
-      console.log(vowelOutput(arrayOfUserInput));
+      
 
 
 
@@ -52,27 +53,18 @@ const App = () => {
       // Input: Take in any word with a "qu" and the string
       // Output: a word that takes the first consanant and qu and puts it on the back and adds "ay"
 
-
-      const quHard = () =>{
-        for(let i = 0; i < arrayOfUserInput; i++)
-        if(vowelsArray.indexOf(arrayOfUserInput[i])){
-          let firstcon = arrayOfUserInput.slice(0, i)
-          let middlecon = arrayOfUserInput.slice(i, arrayOfUserInput.length)
-          newWord = middlecon + firstcon + "ay"
-        }
-        return newWord
-
+      const quHard = () => {
+        if(eachWord.includes("qu")){
+      
+      let firstcon = eachWord.slice(0, 3)
+      let midcon = eachWord.slice(3)
+        
+        return midcon + firstcon + "ay"
       }
+    }
 
-console.log(quHard(arrayOfUserInput));
-
-
-
-
-      // Can type any word that has a "qu" in the first syllable in the text input (e.g. squeal)
-      // - Can hit the submit button
-      // - Can see the words that have a "qu" in the first syllable translated to Pig Latin and rendered to the page (e.g. ealsquay)
-
+     
+      console.log(quHard(arrayOfUserInput));
 
 
 
