@@ -33,9 +33,24 @@ const App = () => {
 
       // ACTION ITEM: your Pig Latin logic goes here!
 
-    
+      // Psuedo Code:
+      // Input: Takes the text the user types and can see the words that begin with a vowel
+      // Output: output the words beginning with vowels with adding "way" at the end of the word (e.g. orange = orangeway)
 
-      // ACTION ITEM: this return will be the output of your Pig Latin'd code
+      const vowelOutput = () =>{
+       if(vowelsArray.includes(eachWord[0]))
+       return eachWord + "way"
+      }
+      
+      
+      console.log(vowelOutput(arrayOfUserInput));
+    
+        
+      
+     
+    
+     
+        // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
     })
 
