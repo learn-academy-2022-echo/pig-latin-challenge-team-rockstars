@@ -79,9 +79,9 @@ const App = () => {
         if(eachWord.includes("y") && eachWord !== vowelsArray)
         
      
+       return
        
-       
-        return eachWord
+    
       }
 
       console.log(yFunc(arrayOfUserInput));
